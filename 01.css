@@ -1,0 +1,139 @@
+/*
+    inline html style
+    comments in css (comme là)
+    <style> element en haut du doc html
+    Class avec .red-text [dans style ou dans css file] 
+    font-size:
+    font-family
+    import font from url
+    width
+    multi class to a single element
+    border-radius pour rendre plus arondi
+    background-color
+    id avec #
+    padding
+    [type='nomType']
+
+
+
+*/
+
+
+
+
+
+/* 
+    <h2 style="color: red;">CatPhotoApp</h2>
+
+    ou alors si on est encore dans un document html
+
+<style>
+    h2 {
+      color: red;
+    }
+
+</style>
+
+
+<h2>CatPhotoApp</h2>
+
+*******************************************************************
+
+<style>
+  .red-text {
+    color: red;
+    font-size: 16px;
+    font-family: monospace;
+    
+  }
+</style>
+
+<h2 class="red-text">CatPhotoApp</h2>
+
+*******************************************************************
+
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">     dans head
+then dans css on pourra ecrire:
+
+h2 {
+  font-family: lobster;
+}
+
+*******************************************************************
+
+p {
+  font-family: Helvetica, sans-serif;
+}
+au cas où le premier font ne fonctionnerait pas
+
+.smaller-image {
+  width: 100px;
+}
+
+*******************************************************************
+
+on peut appliquer plusieurs classes à un element html.
+
+.blog-para {
+  font-size: 10px;
+  background-color: silver;
+}
+
+.game-cheese {
+  border-color: red;
+  border-width: 10px;
+  border-style: solid;
+  border-radius: 10px
+}
+
+<p class="blog-para game-cheese">blabla lorem</p>
+
+
+*******************************************************************
+
+#unique-para {
+  background-color: red;
+}
+
+<p id="unique-para">Voilàlorem</p>
+
+
+*******************************************************************
+
+h5 {
+  padding: 10px;
+  margin: 10px;
+}
+
+les margin peuent avoir des valeurs negatives
+
+h3 {
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  margin: 40px 20px 40px 20px;
+}
+
+[type='checkbox'] {
+  margin: 10px 0px 15px 0px;
+}
+
+
+*******************************************************************
+
+
+Understand absolute versus relative unuits 
+
+
+
+
+
+
+*/
+
+
+
+
+
+
