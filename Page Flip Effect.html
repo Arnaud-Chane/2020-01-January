@@ -15,7 +15,6 @@ page flip effect
 
     <style>
 
-      6
       * {
         margin: 0;
         box-sizing: border-box;
@@ -26,10 +25,82 @@ page flip effect
         height: 100%;
         width: 100%;
         overflow: hidden;
+        background-color: grey;
         background-size: cover;
-
       }
       
+      .wrapper {
+        width: 100%;
+        height : 100%;
+        perspective: 2000px;
+        padding: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .left, .middle, .right {
+        float: left;
+        position: relative;
+        background-color: white;
+        height: 100%;
+        width: 33%;
+        max width: 300px;
+        max height: 400px;
+      }
+
+      .left, .right {
+        transition: 0.7s ease-in-out;
+      }
+      
+      .left.open, .right.open{
+        transform: rotateY(0deg);
+        transition: 0.7s ease-in-out;
+      }
+      
+      .left{
+        z-index: 20;
+        transform: rotateY(180deg);
+        transform-origin: 100% 50%;
+      }
+
+      .right {
+        transform: rotateY(-180deg)
+        transform-origin: 0% 50%;
+      }
+
+      .front, .back{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-color: white;
+        top: 0;  
+      }
+
+      .front{
+        transform: rotateY(180deg);
+        z-index: 5;
+      }
+
+      .back{
+        background-color: white;
+        z-index: 4;
+        backface-visibility: hidden;
+      }
+
+      .back.open{
+        z-index: 10;
+
+      }
+
+      .openb{
+        background-color: #009788;
+        border
+      }
+
+
+
+
 
 
 
@@ -50,11 +121,11 @@ page flip effect
             <h1>Page Flip Effect</h1>
             <br>
             <p class="preview">
-            lorem20
+              I'LL soon make you dry enough!' They all sat down again in a ring, and begged the Mouse was bristling all over, and she at once crowded round it, panting, and asking, `But who has won?' This question the Dodo could not remember ever having seen such a nice soft thing to nurse--and she's such a dear quiet thing,' Alice went on, `"--found it advisable to go with Edgar Atheling to meet William and offer him the crown.
             </p>
             <button class="openb">
               <p>
-                Read more
+                Read more ...
               </p>
             </button>
           </div>
@@ -66,7 +137,7 @@ page flip effect
             <h1>First</h1>
             <br>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining 
+              The question is, what did the archbishop find?' The Mouse looked at it, and found in it a very small cake, on which the words `EAT ME' were beautifully marked in currants. The little door, so she went on talking: `Dear, dear! `How cheerfully he seems to grin, How neatly spread his claws, And welcome little fishes in With gently smiling jaws!' `I'm sure those are not the same, the next question is, Who in the distance, and she hastily dried her eyes to see what was coming.
             </p>
           </div>
         </div>
@@ -79,24 +150,26 @@ page flip effect
           <h1>Second</h1>
           <br>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining 
+            `Of course,' the Dodo managed it.) First it marked out a race-course, in a ring, and begged the Mouse to tell them something more. Please, Ma'am, is this New Zealand or Australia?' (and she tried to look down and make out what it was: at first was moderate. How queer everything is queer to-day.' Just then she heard a little glass box that was lying under the table: she opened it, and then hurried on, Alice started to her feet, for it now, I suppose, by being drowned in my own tears!
           </p>
         </div>
       </div>
 
-      <div class="right>
+      <div class="right">
         <div class="sectionwrap">
           <h1>Third</h1>
           <br>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining 
+            That WILL be a person of authority among them, called out, `Sit down, all of you, and listen to me! Alice led the way, and the whole party swam to the shore. `As wet as ever,' said Alice in a great hurry to change the subject of conversation. `Hand it over here,' said the Duck: `it's generally a frog or a worm.
           </p>
         </div>
+        <button class="closeb">x</button>
       </div>
-
 
     </div>
 
   </body>
 
 </html>
+
+
