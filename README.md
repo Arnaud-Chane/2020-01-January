@@ -1,5 +1,4 @@
 # CodeOfTheDay
-I will try to put what I do whenever I code. It will keep tracks of what I did to see my progression !
+I will try to put what I do whenever I code. It will keep tracks of what I did to see my progression ! 
 
-
-There will be nothing in the main branch, every code will be in the other branches based on the day.
+First month of 2020, January 2020, trying to understand how do Git work and coding in general.
